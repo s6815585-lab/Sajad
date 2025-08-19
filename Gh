@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع توصيل سريع</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>سريع</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">تتبع الطلب</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#" class="btn-login">تسجيل الدخول</a>
+            <a href="#" class="btn-order">اطلب الآن</a>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h2>توصيل سريع وموثوق!</h2>
+            <p>نصلك أينما كنت وفي أسرع وقت ممكن.</p>
+            <a href="#" class="btn-cta">ابدأ بطلبك الآن</a>
+        </div>
+    </main>
+
+    <section class="features-section">
+        <div class="feature-item">
+            <div class="icon">🚗</div>
+            <h3>توصيل فائق السرعة</h3>
+            <p>نضمن وصول طلبك في وقت قياسي.</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon">📦</div>
+            <h3>تتبع مباشر</h3>
+            <p>يمكنك تتبع طلبك خطوة بخطوة.</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon">💳</div>
+            <h3>دفع آمن</h3>
+            <p>خيارات دفع متعددة وآمنة.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 جميع الحقوق محفوظة لـ سريع.</p>
+    </footer>
+
+</body>
+</html>
+:root {
+    --primary-red: #E74C3C;
+    --primary-gold: #FFC300;
+    --dark-gold: #C09A00;
+    --light-gray: #f4f4f4;
+    --dark-text: #333;
+    --white-text: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
+    direction: rtl; /* لجعل النص يبدأ من اليمين لليسار */
+}
+
+/* Header & Navigation */
+.main-header {
+    background-color: var(--primary-red);
+    color: var(--white-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: var(--primary-gold);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: var(--white-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--primary-gold);
+}
+
+.user-actions .btn-login,
+.user-actions .btn-order {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: var(--white-text);
+    border: 2px solid var(--white-text);
+}
+
+.btn-login:hover {
+    background-color: var(--white-text);
+    color: var(--primary-red);
+}
+
+.btn-order {
+    background-color: var(--primary-gold);
+    color: var(--primary-red);
+    margin-right: 1rem;
+}
+
+.btn-order:hover {
+    background-color: var(--dark-gold);
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-red);
+    color: var(--white-text);
+    padding: 8rem 5%;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-gold);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-cta {
+    background-color: var(--primary-gold);
+    color: var(--primary-red);
+    padding: 1.25rem 2.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+    background-color: var(--dark-gold);
+}
+
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.feature-item {
+    background-color: var(--white-text);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 30%;
+}
+
+.feature-item .icon {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--primary-red);
+    color: var(--white-text);
+    text-align: center;
+    padding: 1.5rem 5%;
+    margin-top: 3rem;
+}
